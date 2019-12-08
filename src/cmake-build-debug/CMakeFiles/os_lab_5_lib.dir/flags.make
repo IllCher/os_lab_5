@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC   -std=gnu++1z
 
 CXX_DEFINES = -Dos_lab_5_lib_EXPORTS
 
-CXX_INCLUDES = -I/mnt/d/Study/Labs2course/os_lab_5/src/lib 
+CXX_INCLUDES = -I/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib 
 

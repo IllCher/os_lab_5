@@ -17,12 +17,13 @@ int main() {
                 for (int i = 0; i < v.size(); i++) {
                     std::cout << v[i] << " ";
                 }
+                std::cout << "\n";
             } else if (cmd == "ai") {
                 int i;
                 std::cin >> i;
                 std::string value;
                 std::cin >> value;
-                v[i] = value;
+                v.replace(value, i);
             } else {
                 std::cout << "Wrong command\n";
             }

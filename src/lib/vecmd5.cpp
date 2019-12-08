@@ -2,62 +2,71 @@
 
 
 bool vector::full(){
-    return (this->logic == this->Rsize);
+    return (this->vsize == this->cap);
 }
 
 
 void vector::change(){
-    int newSize = this->Rsize << 1;
+    int newSize = this->cap *= 2;
     newSize++;
 
     std::string * aux = new std::string[newSize];
 
-    for(int i=0;i<this->logic;i++) aux[i] = this->body[i];
+    for(int i=0;i<this->vsize;i++) aux[i] = this->body[i];
 
 
     delete[] this->body;
 
     this->body = aux;
-    this->Rsize = newSize;
+    this->cap = newSize;
 }
 
 
 vector::vector(){
     this->body = nullptr;
-    this->logic = 0;
-    this->Rsize = 0;
+    this->vsize = 0;
+    this->cap = 0;
 }
 
 
 vector::~vector(){
     delete[] this->body;
-    this->logic = 0;
-    this->Rsize = 0;
+    this->vsize = 0;
+    this->cap = 0;
 }
 
 
 bool vector::empty(){
-    return (this->logic == 0);
+    return (this->vsize == 0);
 }
 
+void vector::replace(std::string& val, int index){
+    if (index == vsize) {
+        push_back(val);
+    } else if (index < vsize) {
+        this->body[index] = val;
+    } else {
+        std::cout << "Out of bounds\n";
+    }
+} 
 
-void vector::push_back(std::string val){
+void vector::push_back(std::string& val){
     if(this->full()){
         this->change();
     }
 
-    this->body[this->logic] = val;
-    this->logic++;
+    this->body[this->vsize] = val;
+    this->vsize++;
 }
 
 
 void vector::pop_back(){
-    this->logic--;
+    this->vsize--;
 }
 
 
 int vector::size(){
-    return (this->logic);
+    return (this->vsize);
 }
 
 

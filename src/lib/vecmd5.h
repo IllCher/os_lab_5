@@ -7,8 +7,8 @@
 class vector{
 private:
     std::string* body;
-    int logic;
-    int Rsize;
+    int vsize;
+    int cap;
 
     bool full();
     void change();
@@ -16,10 +16,12 @@ public:
     vector();
     ~vector();
     bool empty();
-    void push_back(std::string val);
+    void replace(std::string& val, int index);
+    void push_back(std::string& val);
     void pop_back();
     int size();
     std::string& operator[](int index);
+
 };
 
 
