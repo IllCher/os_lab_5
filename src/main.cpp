@@ -14,10 +14,14 @@ int main() {
             } else if (cmd == "rmv") {
                 v.pop_back();
             } else if (cmd == "prt") {
-                for (int i = 0; i < v.size(); i++) {
-                    std::cout << v[i] << " ";
+                if (v.empty()) {
+                    std::cout << "Empty\n";
+                } else {
+                    for (int i = 0; i < v.size(); i++) {
+                        std::cout << v[i] << " ";
+                    }
+                    std::cout <<"\n";
                 }
-                std::cout << "\n";
             } else if (cmd == "ai") {
                 int i;
                 std::cin >> i;
