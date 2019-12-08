@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/vecmd5.h
+iostream
+-
+string
+-
+utility
+-
+
+/mnt/d/Study/Labs2course/os_lab_5/src/main.cpp
+iostream
+-
+../lib/vecmd5.h
+/mnt/d/Study/Labs2course/os_lab_5/lib/vecmd5.h
+
