@@ -57,38 +57,38 @@ include CMakeFiles/os_lab_5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/os_lab_5.dir/flags.make
 
-CMakeFiles/os_lab_5.dir/main.cpp.o: CMakeFiles/os_lab_5.dir/flags.make
-CMakeFiles/os_lab_5.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/os_lab_5.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/os_lab_5.dir/main.cpp.o -c /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/main.cpp
+CMakeFiles/os_lab_5.dir/test1.cpp.o: CMakeFiles/os_lab_5.dir/flags.make
+CMakeFiles/os_lab_5.dir/test1.cpp.o: ../test1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/os_lab_5.dir/test1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/os_lab_5.dir/test1.cpp.o -c /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test1.cpp
 
-CMakeFiles/os_lab_5.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/os_lab_5.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/main.cpp > CMakeFiles/os_lab_5.dir/main.cpp.i
+CMakeFiles/os_lab_5.dir/test1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/os_lab_5.dir/test1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test1.cpp > CMakeFiles/os_lab_5.dir/test1.cpp.i
 
-CMakeFiles/os_lab_5.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/os_lab_5.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/main.cpp -o CMakeFiles/os_lab_5.dir/main.cpp.s
+CMakeFiles/os_lab_5.dir/test1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/os_lab_5.dir/test1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test1.cpp -o CMakeFiles/os_lab_5.dir/test1.cpp.s
 
-CMakeFiles/os_lab_5.dir/main.cpp.o.requires:
+CMakeFiles/os_lab_5.dir/test1.cpp.o.requires:
 
-.PHONY : CMakeFiles/os_lab_5.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/os_lab_5.dir/test1.cpp.o.requires
 
-CMakeFiles/os_lab_5.dir/main.cpp.o.provides: CMakeFiles/os_lab_5.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/os_lab_5.dir/main.cpp.o.provides
+CMakeFiles/os_lab_5.dir/test1.cpp.o.provides: CMakeFiles/os_lab_5.dir/test1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.o.provides.build
+.PHONY : CMakeFiles/os_lab_5.dir/test1.cpp.o.provides
 
-CMakeFiles/os_lab_5.dir/main.cpp.o.provides.build: CMakeFiles/os_lab_5.dir/main.cpp.o
+CMakeFiles/os_lab_5.dir/test1.cpp.o.provides.build: CMakeFiles/os_lab_5.dir/test1.cpp.o
 
 
 # Object files for target os_lab_5
 os_lab_5_OBJECTS = \
-"CMakeFiles/os_lab_5.dir/main.cpp.o"
+"CMakeFiles/os_lab_5.dir/test1.cpp.o"
 
 # External object files for target os_lab_5
 os_lab_5_EXTERNAL_OBJECTS =
 
-os_lab_5: CMakeFiles/os_lab_5.dir/main.cpp.o
+os_lab_5: CMakeFiles/os_lab_5.dir/test1.cpp.o
 os_lab_5: CMakeFiles/os_lab_5.dir/build.make
 os_lab_5: libos_lab_5_lib.so
 os_lab_5: CMakeFiles/os_lab_5.dir/link.txt
@@ -100,7 +100,7 @@ CMakeFiles/os_lab_5.dir/build: os_lab_5
 
 .PHONY : CMakeFiles/os_lab_5.dir/build
 
-CMakeFiles/os_lab_5.dir/requires: CMakeFiles/os_lab_5.dir/main.cpp.o.requires
+CMakeFiles/os_lab_5.dir/requires: CMakeFiles/os_lab_5.dir/test1.cpp.o.requires
 
 .PHONY : CMakeFiles/os_lab_5.dir/requires
 

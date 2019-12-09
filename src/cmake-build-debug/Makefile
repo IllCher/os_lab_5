@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-buil
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named os_lab_52
+
+# Build rule for target.
+os_lab_52: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 os_lab_52
+.PHONY : os_lab_52
+
+# fast build rule for target.
+os_lab_52/fast:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/build
+.PHONY : os_lab_52/fast
 
 #=============================================================================
 # Target rules for targets named os_lab_5_lib
@@ -163,32 +176,59 @@ lib/vecmd5.cpp.s:
 	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.s
 .PHONY : lib/vecmd5.cpp.s
 
-main.o: main.cpp.o
+test1.o: test1.cpp.o
 
-.PHONY : main.o
+.PHONY : test1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/main.cpp.o
-.PHONY : main.cpp.o
+test1.cpp.o:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.o
+.PHONY : test1.cpp.o
 
-main.i: main.cpp.i
+test1.i: test1.cpp.i
 
-.PHONY : main.i
+.PHONY : test1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/main.cpp.i
-.PHONY : main.cpp.i
+test1.cpp.i:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.i
+.PHONY : test1.cpp.i
 
-main.s: main.cpp.s
+test1.s: test1.cpp.s
 
-.PHONY : main.s
+.PHONY : test1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/main.cpp.s
-.PHONY : main.cpp.s
+test1.cpp.s:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.s
+.PHONY : test1.cpp.s
+
+test2.o: test2.cpp.o
+
+.PHONY : test2.o
+
+# target to build an object file
+test2.cpp.o:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.o
+.PHONY : test2.cpp.o
+
+test2.i: test2.cpp.i
+
+.PHONY : test2.i
+
+# target to preprocess a source file
+test2.cpp.i:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.i
+.PHONY : test2.cpp.i
+
+test2.s: test2.cpp.s
+
+.PHONY : test2.s
+
+# target to generate assembly for a file
+test2.cpp.s:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.s
+.PHONY : test2.cpp.s
 
 # Help Target
 help:
@@ -196,16 +236,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... os_lab_52"
 	@echo "... os_lab_5_lib"
 	@echo "... os_lab_5"
 	@echo "... lib/vecmd5.o"
 	@echo "... lib/vecmd5.i"
 	@echo "... lib/vecmd5.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test1.o"
+	@echo "... test1.i"
+	@echo "... test1.s"
+	@echo "... test2.o"
+	@echo "... test2.i"
+	@echo "... test2.s"
 .PHONY : help
 
 
