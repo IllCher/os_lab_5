@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src
+CMAKE_SOURCE_DIR = /mnt/d/Study/Labs2course/os_lab_5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/os_lab_5_lib.dir/depend.make
@@ -57,41 +57,41 @@ include CMakeFiles/os_lab_5_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/os_lab_5_lib.dir/flags.make
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o: CMakeFiles/os_lab_5_lib.dir/flags.make
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o: ../lib/vecmd5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o -c /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib/vecmd5.cpp
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o: CMakeFiles/os_lab_5_lib.dir/flags.make
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o: ../lib/vecmd5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o   -c /mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.c
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib/vecmd5.cpp > CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.i
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.c > CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.i
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib/vecmd5.cpp -o CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.s
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.c -o CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.s
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.requires:
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.requires:
 
-.PHONY : CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.requires
+.PHONY : CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.requires
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.provides: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.requires
-	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.provides.build
-.PHONY : CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.provides
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.provides: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.requires
+	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.provides.build
+.PHONY : CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.provides
 
-CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.provides.build: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o
+CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.provides.build: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o
 
 
 # Object files for target os_lab_5_lib
 os_lab_5_lib_OBJECTS = \
-"CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o"
+"CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o"
 
 # External object files for target os_lab_5_lib
 os_lab_5_lib_EXTERNAL_OBJECTS =
 
-libos_lab_5_lib.so: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o
+libos_lab_5_lib.so: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o
 libos_lab_5_lib.so: CMakeFiles/os_lab_5_lib.dir/build.make
 libos_lab_5_lib.so: CMakeFiles/os_lab_5_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libos_lab_5_lib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libos_lab_5_lib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/os_lab_5_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +99,7 @@ CMakeFiles/os_lab_5_lib.dir/build: libos_lab_5_lib.so
 
 .PHONY : CMakeFiles/os_lab_5_lib.dir/build
 
-CMakeFiles/os_lab_5_lib.dir/requires: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o.requires
+CMakeFiles/os_lab_5_lib.dir/requires: CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o.requires
 
 .PHONY : CMakeFiles/os_lab_5_lib.dir/requires
 
@@ -108,6 +108,6 @@ CMakeFiles/os_lab_5_lib.dir/clean:
 .PHONY : CMakeFiles/os_lab_5_lib.dir/clean
 
 CMakeFiles/os_lab_5_lib.dir/depend:
-	cd /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/os_lab_5_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/Study/Labs2course/os_lab_5/src /mnt/d/Study/Labs2course/os_lab_5/src /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/os_lab_5_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/os_lab_5_lib.dir/depend
 

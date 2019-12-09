@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libos_lab_5_lib.so -o libos_lab_5_lib.so CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o 
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,libos_lab_5_lib.so -o libos_lab_5_lib.so CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o 

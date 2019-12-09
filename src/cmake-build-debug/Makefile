@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src
+CMAKE_SOURCE_DIR = /mnt/d/Study/Labs2course/os_lab_5/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,86 +149,86 @@ os_lab_5/fast:
 	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/build
 .PHONY : os_lab_5/fast
 
-lib/vecmd5.o: lib/vecmd5.cpp.o
+lib/vecmd5.o: lib/vecmd5.c.o
 
 .PHONY : lib/vecmd5.o
 
 # target to build an object file
-lib/vecmd5.cpp.o:
-	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.o
-.PHONY : lib/vecmd5.cpp.o
+lib/vecmd5.c.o:
+	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o
+.PHONY : lib/vecmd5.c.o
 
-lib/vecmd5.i: lib/vecmd5.cpp.i
+lib/vecmd5.i: lib/vecmd5.c.i
 
 .PHONY : lib/vecmd5.i
 
 # target to preprocess a source file
-lib/vecmd5.cpp.i:
-	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.i
-.PHONY : lib/vecmd5.cpp.i
+lib/vecmd5.c.i:
+	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.i
+.PHONY : lib/vecmd5.c.i
 
-lib/vecmd5.s: lib/vecmd5.cpp.s
+lib/vecmd5.s: lib/vecmd5.c.s
 
 .PHONY : lib/vecmd5.s
 
 # target to generate assembly for a file
-lib/vecmd5.cpp.s:
-	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.cpp.s
-.PHONY : lib/vecmd5.cpp.s
+lib/vecmd5.c.s:
+	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.s
+.PHONY : lib/vecmd5.c.s
 
-test1.o: test1.cpp.o
+test1.o: test1.c.o
 
 .PHONY : test1.o
 
 # target to build an object file
-test1.cpp.o:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.o
-.PHONY : test1.cpp.o
+test1.c.o:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.o
+.PHONY : test1.c.o
 
-test1.i: test1.cpp.i
+test1.i: test1.c.i
 
 .PHONY : test1.i
 
 # target to preprocess a source file
-test1.cpp.i:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.i
-.PHONY : test1.cpp.i
+test1.c.i:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.i
+.PHONY : test1.c.i
 
-test1.s: test1.cpp.s
+test1.s: test1.c.s
 
 .PHONY : test1.s
 
 # target to generate assembly for a file
-test1.cpp.s:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.cpp.s
-.PHONY : test1.cpp.s
+test1.c.s:
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.s
+.PHONY : test1.c.s
 
-test2.o: test2.cpp.o
+test2.o: test2.c.o
 
 .PHONY : test2.o
 
 # target to build an object file
-test2.cpp.o:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.o
-.PHONY : test2.cpp.o
+test2.c.o:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.o
+.PHONY : test2.c.o
 
-test2.i: test2.cpp.i
+test2.i: test2.c.i
 
 .PHONY : test2.i
 
 # target to preprocess a source file
-test2.cpp.i:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.i
-.PHONY : test2.cpp.i
+test2.c.i:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.i
+.PHONY : test2.c.i
 
-test2.s: test2.cpp.s
+test2.s: test2.c.s
 
 .PHONY : test2.s
 
 # target to generate assembly for a file
-test2.cpp.s:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.cpp.s
-.PHONY : test2.cpp.s
+test2.c.s:
+	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.s
+.PHONY : test2.c.s
 
 # Help Target
 help:
