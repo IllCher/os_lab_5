@@ -15,20 +15,39 @@ void v_delete(vector* v) {
     free(v->body);
     free(v);
 }
+void v_push(vector* v, md5 val) {
+    int size = v_get_size(v);
+    if (size + 1 == v_get_CAP(v)) {
+        v->CAP *= 2;
+        v_set_CAP(v, v->CAP);
+        v->body[size] = (md5) malloc(33);
+        strcpy(v->body[size], val);
+        v_set_size(v, size + 1);
+    } else {
+        v->body[size] = (md5) malloc(33);
+        strcpy(v->body[size], val);
+        v_set_size(v, size + 1);
+    }
+}
 
 void v_set(vector* v, int i, md5 val) {
     if (i > v_get_size(v)) {
-        printf("Out of bounds");
-        return;
-    }
-    if (v_get_size(v) + 1 == v_get_CAP(v)) {
+        printf("Out of bounds\n");
+    } else if (v_get_size(v) + 1 == v_get_CAP(v)) {
         v->CAP *= 2;
         v_set_CAP(v, v->CAP);
+        int size = v_get_size(v);
+        v_set_size(v, size + 1);
+        v->body[i] = (md5)malloc(33);
+        strcpy(v->body[i], val);
+    } else if (i == v_get_size(v)) {
+        v->body[i] = (md5) malloc(33);
+        strcpy(v->body[i], val);
+        v_set_size(v, i + 1);
+    } else {
+        strcpy(v->body[i], val);
     }
-    int size = v_get_size(v);
-    v_set_size(v, size + 1);
-    v->body[i] = (md5)malloc(33);
-    strcpy(v->body[i], val);
+
 }
 
 md5 v_get(vector* v, int i) {

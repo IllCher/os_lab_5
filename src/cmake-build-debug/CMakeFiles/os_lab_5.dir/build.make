@@ -57,38 +57,38 @@ include CMakeFiles/os_lab_5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/os_lab_5.dir/flags.make
 
-CMakeFiles/os_lab_5.dir/test2.c.o: CMakeFiles/os_lab_5.dir/flags.make
-CMakeFiles/os_lab_5.dir/test2.c.o: ../test2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/os_lab_5.dir/test2.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os_lab_5.dir/test2.c.o   -c /mnt/d/Study/Labs2course/os_lab_5/src/test2.c
+CMakeFiles/os_lab_5.dir/test1.c.o: CMakeFiles/os_lab_5.dir/flags.make
+CMakeFiles/os_lab_5.dir/test1.c.o: ../test1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/os_lab_5.dir/test1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/os_lab_5.dir/test1.c.o   -c /mnt/d/Study/Labs2course/os_lab_5/src/test1.c
 
-CMakeFiles/os_lab_5.dir/test2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/os_lab_5.dir/test2.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Study/Labs2course/os_lab_5/src/test2.c > CMakeFiles/os_lab_5.dir/test2.c.i
+CMakeFiles/os_lab_5.dir/test1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/os_lab_5.dir/test1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Study/Labs2course/os_lab_5/src/test1.c > CMakeFiles/os_lab_5.dir/test1.c.i
 
-CMakeFiles/os_lab_5.dir/test2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/os_lab_5.dir/test2.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Study/Labs2course/os_lab_5/src/test2.c -o CMakeFiles/os_lab_5.dir/test2.c.s
+CMakeFiles/os_lab_5.dir/test1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/os_lab_5.dir/test1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Study/Labs2course/os_lab_5/src/test1.c -o CMakeFiles/os_lab_5.dir/test1.c.s
 
-CMakeFiles/os_lab_5.dir/test2.c.o.requires:
+CMakeFiles/os_lab_5.dir/test1.c.o.requires:
 
-.PHONY : CMakeFiles/os_lab_5.dir/test2.c.o.requires
+.PHONY : CMakeFiles/os_lab_5.dir/test1.c.o.requires
 
-CMakeFiles/os_lab_5.dir/test2.c.o.provides: CMakeFiles/os_lab_5.dir/test2.c.o.requires
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test2.c.o.provides.build
-.PHONY : CMakeFiles/os_lab_5.dir/test2.c.o.provides
+CMakeFiles/os_lab_5.dir/test1.c.o.provides: CMakeFiles/os_lab_5.dir/test1.c.o.requires
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.o.provides.build
+.PHONY : CMakeFiles/os_lab_5.dir/test1.c.o.provides
 
-CMakeFiles/os_lab_5.dir/test2.c.o.provides.build: CMakeFiles/os_lab_5.dir/test2.c.o
+CMakeFiles/os_lab_5.dir/test1.c.o.provides.build: CMakeFiles/os_lab_5.dir/test1.c.o
 
 
 # Object files for target os_lab_5
 os_lab_5_OBJECTS = \
-"CMakeFiles/os_lab_5.dir/test2.c.o"
+"CMakeFiles/os_lab_5.dir/test1.c.o"
 
 # External object files for target os_lab_5
 os_lab_5_EXTERNAL_OBJECTS =
 
-os_lab_5: CMakeFiles/os_lab_5.dir/test2.c.o
+os_lab_5: CMakeFiles/os_lab_5.dir/test1.c.o
 os_lab_5: CMakeFiles/os_lab_5.dir/build.make
 os_lab_5: libos_lab_5_lib.so
 os_lab_5: CMakeFiles/os_lab_5.dir/link.txt
@@ -100,7 +100,7 @@ CMakeFiles/os_lab_5.dir/build: os_lab_5
 
 .PHONY : CMakeFiles/os_lab_5.dir/build
 
-CMakeFiles/os_lab_5.dir/requires: CMakeFiles/os_lab_5.dir/test2.c.o.requires
+CMakeFiles/os_lab_5.dir/requires: CMakeFiles/os_lab_5.dir/test1.c.o.requires
 
 .PHONY : CMakeFiles/os_lab_5.dir/requires
 

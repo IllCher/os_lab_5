@@ -6,7 +6,7 @@ add_library(${PROJECT_NAME}_lib SHARED lib/vecmd5.c)
 
 target_include_directories(${PROJECT_NAME}_lib PUBLIC ${PROJECT_SOURCE_DIR}/lib)
 
-
-#add_executable(${PROJECT_NAME} test1.c)
-add_executable(${PROJECT_NAME} test2.c)
+add_executable(${PROJECT_NAME} test1.c)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_lib ${CMAKE_DL_LIBS})
+add_executable(${PROJECT_NAME}2 test2.c)
+target_link_libraries(${PROJECT_NAME}2 PRIVATE ${PROJECT_NAME}_lib ${CMAKE_DL_LIBS})

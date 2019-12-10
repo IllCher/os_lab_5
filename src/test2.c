@@ -8,6 +8,7 @@
 int main() {
     vector* (*v_create)();
     void (*v_delete)(vector* v);
+    void (*v_push)(vector* v, md5 val);
     void (*v_set)(vector* v, int i, md5 val);
     md5 (*v_get)(vector* v, int i);
     int (*v_get_size)(vector* v);
@@ -25,6 +26,7 @@ int main() {
     }
     v_create = dlsym(libHandle, "v_create");
     v_delete = dlsym(libHandle, "v_delete");
+    v_push = dlsym(libHandle, "v_push");
     v_set = dlsym(libHandle, "v_set");
     v_get = dlsym(libHandle, "v_get");
     v_get_size = dlsym(libHandle, "v_get_size");
@@ -47,7 +49,7 @@ int main() {
             scanf("%s", value);
             value[32] = '\0';
             if ((*check)(value)) {
-                (*v_set)(v, v->size, value);
+                (*v_push)(v, value);
             } else {
                 printf("It's not an MD5\n");
             }

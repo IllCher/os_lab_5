@@ -13,7 +13,7 @@ int main() {
             scanf("%s", value);
             value[32] = '\0';
             if (check(value)) {
-                v_set(v, v->size, value);
+                v_push(v, value);
             } else {
                 printf("It's not an MD5\n");
             }
@@ -29,7 +29,6 @@ int main() {
             v_set(v, pos, value);
         } else {
             printf("Wrong command\n");
-            break;
         }
     }
     v_delete(v);

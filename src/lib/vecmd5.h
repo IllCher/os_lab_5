@@ -15,6 +15,7 @@ typedef struct {
 
 vector* v_create();
 void v_delete(vector* v);
+void v_push(vector* v, md5 val);
 void v_set(vector* v, int i, md5 val);
 md5 v_get(vector* v, int i);
 int v_get_size(vector* v);
