@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/os_lab_5.dir/test2.c.o  -o os_lab_5 -Wl,-rpath,/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug libos_lab_5_lib.so 
+/usr/bin/cc -g   CMakeFiles/os_lab_5.dir/test2.c.o  -o os_lab_5 -Wl,-rpath,/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug libos_lab_5_lib.so -ldl 

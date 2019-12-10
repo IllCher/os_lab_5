@@ -17,6 +17,10 @@ void v_delete(vector* v) {
 }
 
 void v_set(vector* v, int i, md5 val) {
+    if (i > v_get_size(v)) {
+        printf("Out of bounds");
+        return;
+    }
     if (v_get_size(v) + 1 == v_get_CAP(v)) {
         v->CAP *= 2;
         v_set_CAP(v, v->CAP);
@@ -43,7 +47,6 @@ void v_set_size(vector* v, int new_size) {
     v->size = new_size;
 }
 void v_set_CAP(vector* v, int new_size) {
-    //char* value = (char*)malloc(33);
     md5* reBody = (md5*)realloc(v->body, new_size * sizeof(md5));
     v->body = reBody;
 }

@@ -9,4 +9,4 @@ target_include_directories(${PROJECT_NAME}_lib PUBLIC ${PROJECT_SOURCE_DIR}/lib)
 
 #add_executable(${PROJECT_NAME} test1.c)
 add_executable(${PROJECT_NAME} test2.c)
-target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_lib ${CMAKE_DL_LIBS})

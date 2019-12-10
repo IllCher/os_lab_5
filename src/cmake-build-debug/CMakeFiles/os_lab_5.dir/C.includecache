@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../lib/vecmd5.h
+/mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.h
 stdio.h
 -
 stdlib.h
@@ -18,13 +18,15 @@ stdbool.h
 ctype.h
 -
 
-/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test2.c
+/mnt/d/Study/Labs2course/os_lab_5/src/test2.c
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
-../lib/vecmd5.h
-/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/lib/vecmd5.h
+dlfcn.h
+-
+lib/vecmd5.h
+/mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.h
 
