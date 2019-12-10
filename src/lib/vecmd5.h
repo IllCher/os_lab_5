@@ -6,19 +6,20 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-typedef struct vector {
-    char** items;
-    int capacity;
-    int total;
+typedef char* md5;
+typedef struct {
+    md5* body;
+    int size;
+    int CAP;
 } vector;
 
-vector* vector_init();
-int vector_total(vector* v);
-static void vector_resize(vector* v, int index);
-void vector_add(vector* v, char* item);
-void vector_set(vector* v, int index, char* item);
-char* vector_get(vector* v, int index);
-void vector_delete(vector* v, int index);
-void vector_free(vector* v);
+vector* v_create();
+void v_delete(vector* v);
+void v_set(vector* v, int i, md5 val);
+md5 v_get(vector* v, int i);
+int v_get_size(vector* v);
+int v_get_CAP(vector* v);
+void v_set_size(vector* v, int new_size);
+void v_set_CAP(vector* v, int new_size);
 bool check(char* val);
 #endif //OS_LAB_5_VECMD5_H

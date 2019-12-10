@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/d/Study/Labs2course/os_lab_5/src/lib/vecmd5.c" "/mnt/d/Study/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o"
+  "/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib/vecmd5.c" "/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

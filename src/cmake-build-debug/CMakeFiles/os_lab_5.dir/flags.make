@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/d/Study/Labs2course/os_lab_5/src/lib 
+C_INCLUDES = -I/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib 
 

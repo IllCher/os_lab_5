@@ -1,74 +1,52 @@
 #include "vecmd5.h"
 
-
-vector* vector_init() {
+vector* v_create() {
     vector* v = (vector*)malloc(sizeof(vector));
-    v->capacity = 4;
-    v->total = 0;
-    v->items = malloc(33 * v->capacity);
-    for (int i = 0; i < v->capacity; i++) {
-        v->items[i] = "\0";
-    }
+    v->body = NULL;
+    v->size = 0;
+    v->CAP = 1;
     return v;
 }
 
-int vector_total(vector* v) {
-    return v->total;
-}
-
-static void vector_resize(vector* v, int capacity) {
-
-    char** items = realloc(v->items, 33 * capacity);
-    if (items) {
-        v->items = items;
-        v->capacity = capacity;
+void v_delete(vector* v) {
+    for (int i = 0; i < v_get_size(v); i++) {
+        free(v->body[i]);
     }
+    free(v->body);
+    free(v);
 }
 
-void vector_add(vector* v, char* item) {
-    if (v->capacity == v->total)
-        vector_resize(v, v->capacity * 2);
-    int size = v->total;
-    int i = 0;
-    while (item[i] != '\0') {
-        v->items[size][i] = item[i];
+void v_set(vector* v, int i, md5 val) {
+    if (v_get_size(v) + 1 == v_get_CAP(v)) {
+        v->CAP *= 2;
+        v_set_CAP(v, v->CAP);
     }
-    //strcpy(v->items[size], item);
-    v->total++;
+    int size = v_get_size(v);
+    v_set_size(v, size + 1);
+    v->body[i] = (md5)malloc(33);
+    strcpy(v->body[i], val);
 }
 
-void vector_set(vector* v, int index, char* item) {
-    if (index >= 0 && index < v->total)
-        strcpy(v->items[index], item);
+md5 v_get(vector* v, int i) {
+    return v->body[i];
 }
 
-char* vector_get(vector* v, int index) {
-    if (index >= 0 && index < v->total)
-        return v->items[index];
-    return NULL;
+int v_get_size(vector* v) {
+    return v->size;
 }
 
-void vector_delete(vector* v, int index) {
-    if (index < 0 || index >= v->total)
-        return;
-
-    v->items[index] = NULL;
-
-    for (int i = index; i < v->total - 1; i++) {
-        v->items[i] = v->items[i + 1];
-        v->items[i + 1] = NULL;
-    }
-
-    v->total--;
-
-    if (v->total > 0 && v->total == v->capacity / 4)
-        vector_resize(v, v->capacity / 2);
+int v_get_CAP(vector* v) {
+    return v->CAP;
 }
 
-void vector_free(vector* v) {
-    free(v->items);
+void v_set_size(vector* v, int new_size) {
+    v->size = new_size;
 }
-
+void v_set_CAP(vector* v, int new_size) {
+    //char* value = (char*)malloc(33);
+    md5* reBody = (md5*)realloc(v->body, new_size * sizeof(md5));
+    v->body = reBody;
+}
 
 
 bool check(char* val) {

@@ -5,31 +5,34 @@
 
 
 int main() {
-    vector* v = vector_init();
-    int cmd = 0;
-    while (scanf("%d",&cmd) != EOF) {
-        char* value = (char*)malloc(33);
-        if (cmd == 1) {
+    vector* v = v_create();
+    int c = 0;
+    while (scanf("%d", &c) && c) {
+        char value[33] = {'\0'};
+        if (c == 1) {
             scanf("%s", value);
             value[32] = '\0';
             if (check(value)) {
-                vector_add(v, value);
+                v_set(v, v->size, value);
             } else {
                 printf("It's not an MD5\n");
             }
-        } else if (cmd == 2) {
+        } else if (c == 2) {
+            for (int i = 0; i < v_get_size(v); i++) {
+                printf("%s ", v_get(v, i));
+            }
+            printf("\n");
+        } else if (c == 3) {
+            int pos = 0;
+            scanf("%d", &pos);
             scanf("%s", value);
-            if (check(value)) {
-                vector_add(v, value);
-            } else {
-                printf("It's not an MD5\n");
-            }
+            v_set(v, pos, value);
         } else {
             printf("Wrong command\n");
+            break;
         }
-        free(value);
     }
-    vector_free(v);
+    v_delete(v);
     return 0;
 }
 
