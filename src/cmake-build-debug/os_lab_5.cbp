@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,47 +27,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="os_lab_52">
-				<Option output="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/os_lab_52" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 os_lab_52"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="os_lab_52/fast">
-				<Option output="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/os_lab_52" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 os_lab_52/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -186,11 +140,8 @@
 		<Unit filename="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/lib/vecmd5.h">
 			<Option target="os_lab_5_lib"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test1.c">
-			<Option target="os_lab_5"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/test2.c">
-			<Option target="os_lab_52"/>
+			<Option target="os_lab_5"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

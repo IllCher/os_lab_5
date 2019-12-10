@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /mnt/c/Users/Ilya/Desktop/Labs2course/os_lab_5/src/cmake-buil
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,19 +109,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named os_lab_52
-
-# Build rule for target.
-os_lab_52: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 os_lab_52
-.PHONY : os_lab_52
-
-# fast build rule for target.
-os_lab_52/fast:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/build
-.PHONY : os_lab_52/fast
 
 #=============================================================================
 # Target rules for targets named os_lab_5_lib
@@ -176,40 +163,13 @@ lib/vecmd5.c.s:
 	$(MAKE) -f CMakeFiles/os_lab_5_lib.dir/build.make CMakeFiles/os_lab_5_lib.dir/lib/vecmd5.c.s
 .PHONY : lib/vecmd5.c.s
 
-test1.o: test1.c.o
-
-.PHONY : test1.o
-
-# target to build an object file
-test1.c.o:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.o
-.PHONY : test1.c.o
-
-test1.i: test1.c.i
-
-.PHONY : test1.i
-
-# target to preprocess a source file
-test1.c.i:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.i
-.PHONY : test1.c.i
-
-test1.s: test1.c.s
-
-.PHONY : test1.s
-
-# target to generate assembly for a file
-test1.c.s:
-	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test1.c.s
-.PHONY : test1.c.s
-
 test2.o: test2.c.o
 
 .PHONY : test2.o
 
 # target to build an object file
 test2.c.o:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.o
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test2.c.o
 .PHONY : test2.c.o
 
 test2.i: test2.c.i
@@ -218,7 +178,7 @@ test2.i: test2.c.i
 
 # target to preprocess a source file
 test2.c.i:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.i
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test2.c.i
 .PHONY : test2.c.i
 
 test2.s: test2.c.s
@@ -227,7 +187,7 @@ test2.s: test2.c.s
 
 # target to generate assembly for a file
 test2.c.s:
-	$(MAKE) -f CMakeFiles/os_lab_52.dir/build.make CMakeFiles/os_lab_52.dir/test2.c.s
+	$(MAKE) -f CMakeFiles/os_lab_5.dir/build.make CMakeFiles/os_lab_5.dir/test2.c.s
 .PHONY : test2.c.s
 
 # Help Target
@@ -236,17 +196,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... os_lab_52"
+	@echo "... edit_cache"
 	@echo "... os_lab_5_lib"
 	@echo "... os_lab_5"
 	@echo "... lib/vecmd5.o"
 	@echo "... lib/vecmd5.i"
 	@echo "... lib/vecmd5.s"
-	@echo "... test1.o"
-	@echo "... test1.i"
-	@echo "... test1.s"
 	@echo "... test2.o"
 	@echo "... test2.i"
 	@echo "... test2.s"
