@@ -18,7 +18,7 @@ int main() {
     bool (*check)(char* val);
     char *err;
 
-    void *libHandle;
+    void* libHandle;
     libHandle = dlopen("../cmake-build-debug/libos_lab_5_lib.so", RTLD_LAZY);
     if (!libHandle) {
         fprintf(stderr, "%s\n", dlerror());

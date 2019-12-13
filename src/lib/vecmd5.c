@@ -31,19 +31,10 @@ void v_push(vector* v, md5 val) {
 }
 
 void v_set(vector* v, int i, md5 val) {
-    if (i > v_get_size(v)) {
+    if (i >= v_get_size(v)) {
         printf("Out of bounds\n");
-    } else if (v_get_size(v) + 1 == v_get_CAP(v)) {
-        v->CAP *= 2;
-        v_set_CAP(v, v->CAP);
-        int size = v_get_size(v);
-        v_set_size(v, size + 1);
-        v->body[i] = (md5)malloc(33);
-        strcpy(v->body[i], val);
     } else if (i == v_get_size(v)) {
-        v->body[i] = (md5) malloc(33);
-        strcpy(v->body[i], val);
-        v_set_size(v, i + 1);
+        v_push(v, val);
     } else {
         strcpy(v->body[i], val);
     }
