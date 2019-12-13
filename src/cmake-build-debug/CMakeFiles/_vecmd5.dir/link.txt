@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -g  -shared -Wl,-soname,lib_vecmd5.so -o lib_vecmd5.so CMakeFiles/_vecmd5.dir/lib/vecmd5.c.o 

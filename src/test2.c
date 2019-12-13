@@ -62,7 +62,11 @@ int main() {
             int pos = 0;
             scanf("%d", &pos);
             scanf("%s", value);
-            (*v_set)(v, pos, value);
+            if ((*check)(value)) {
+                (*v_set)(v, pos, value);
+            } else {
+                printf("It's not an MD5\n");
+            }
         } else {
             printf("Wrong command\n");
         }
